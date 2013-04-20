@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Joom News</name>
+	<author>Gayan.W</author>
+	<creationDate>June 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 www.joomnews.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@joomnews.com</authorEmail>
+	<authorUrl>http://www.joomnews.com</authorUrl>
+	<version>1.0</version>
+	<description>This module will create a vertical scrolling news based on  selected category.</description>
+	<files>
+		<filename module="mod_joom_news">mod_joom_news.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+    	<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+	<params>
+		<param name="vsra_title" type="text" size="50" default="Latest News" label="Title" description="Title" />
+		<param name="vsra_height" type="text" default="40" label="Each scroller height in scroll" description="Each scroller height in scroll" />
+		<param name="vsra_count" type="text" default="5" label="Display number of record at the same time in scroll" description="Display number of record at the same time in scroll" />
+		<param name="vsra_width" type="text" default="200" label="Enter max character for each article" description="Enter max character for each article" />
+		<param name="vsra_categories" type="text" default="" label="Category ID" description="Select article from a specific category" />
+		<param name="vsra_order" type="text" default="" label="Order" description="Ordering option, Enter any one(created/modified/ordering)" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>
